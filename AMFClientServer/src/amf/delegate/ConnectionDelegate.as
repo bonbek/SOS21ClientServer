@@ -74,7 +74,9 @@ package amf.delegate {
 				if (so.data.id)
 				{
 					// Déjà venu
-					successCallBack.apply(null, [new User(true, so.data.id)]);
+					if (successCallBack != null) {
+						successCallBack.apply(null, [new User(true, so.data.id)]);
+					}
 					dispose();
 				}
 				else
@@ -111,7 +113,9 @@ package amf.delegate {
 			}
 			else
 			{
-				successCallBack.apply(null, [new User(false, result.current_player)]);
+				if (successCallBack != null) {
+					successCallBack.apply(null, [new User(false, result.current_player)]);
+				}
 				dispose();
 			}			
 		}
@@ -134,7 +138,9 @@ package amf.delegate {
 				
 				// On renvoie l'utilisateur invité avec son nouveau
 				// player créé.
-				successCallBack.apply(null, [new User(true, playerId)]);
+				if (successCallBack != null) {
+					successCallBack.apply(null, [new User(true, playerId)]);
+				}
 				dispose();
 			}
 		}
@@ -144,7 +150,9 @@ package amf.delegate {
 		 */
 		private function onFault (fault:Object) : void
 		{
-			faultCallBack.apply(null, [false]);
+			if (faultCallBack != null) {
+				faultCallBack.apply(null, [false]);
+			}
 			dispose();
 		}
 
