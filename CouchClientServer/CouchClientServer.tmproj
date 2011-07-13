@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>src/CouchClientServer-config.xml</string>
+	<string>../README.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -22,19 +22,38 @@
 			<key>sourceDirectory</key>
 			<string>src</string>
 		</dict>
+		<dict>
+			<key>children</key>
+			<array>
+				<dict>
+					<key>expanded</key>
+					<true/>
+					<key>name</key>
+					<string>clientserver</string>
+					<key>regexFolderFilter</key>
+					<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+					<key>sourceDirectory</key>
+					<string>..</string>
+				</dict>
+			</array>
+			<key>expanded</key>
+			<true/>
+			<key>name</key>
+			<string>repo</string>
+		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>314</integer>
 	<key>metaData</key>
 	<dict>
-		<key>src/CouchClientServer-config.xml</key>
+		<key>../README.md</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>16</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -46,9 +65,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>23</integer>
+				<integer>2</integer>
 				<key>line</key>
-				<integer>5</integer>
+				<integer>18</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -147,11 +166,7 @@
 	<key>openDocuments</key>
 	<array>
 		<string>src/CouchClientServer.as</string>
-		<string>src/couchdb/model/ActionDocument.as</string>
-		<string>src/CouchClientServer-config.xml</string>
-		<string>src/couchdb/service/ActionServices.as</string>
-		<string>src/couchdb/service/TransitionalDocumentServices.as</string>
-		<string>src/couchdb/model/TransitionalPlaceDocument.as</string>
+		<string>../README.md</string>
 	</array>
 	<key>shellVariables</key>
 	<array>
@@ -209,7 +224,23 @@
 	<key>showFileHierarchyPanel</key>
 	<true/>
 	<key>treeState</key>
-	<dict/>
+	<dict>
+		<key>repo</key>
+		<dict>
+			<key>isExpanded</key>
+			<true/>
+			<key>subItems</key>
+			<dict>
+				<key>clientserver</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
 	<key>windowFrame</key>
 	<string>{{0, 4}, {1280, 774}}</string>
 </dict>
